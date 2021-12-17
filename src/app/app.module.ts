@@ -8,6 +8,8 @@ import { MatTableModule } from '@angular/material/table';
 import { HomeComponent } from './pages/home/home.component';
 import { BookSearchMainComponent } from './bookSearch/book-search-main/book-search-main.component';
 import { MovieSearchMainComponent } from './movieSearch/movie-search-main/movie-search-main.component'
+import { BookSearchModule } from './book-search/book-search.module';
+import { MovieSearchModule } from './movie-search/movie-search.module';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { MovieSearchMainComponent } from './movieSearch/movie-search-main/movie-
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    BookSearchModule,
+    MovieSearchModule
   ],
   providers: [],
   bootstrap: [AppComponent]

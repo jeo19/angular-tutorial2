@@ -10,6 +10,7 @@ import { BookSearchMainComponent } from './bookSearch/book-search-main/book-sear
 import { MovieSearchMainComponent } from './movieSearch/movie-search-main/movie-search-main.component'
 import { BookSearchModule } from './book-search/book-search.module';
 import { MovieSearchModule } from './movie-search/movie-search.module';
+import { SearchBoxComponent } from './bookSearch/search-box/search-box.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MovieSearchModule } from './movie-search/movie-search.module';
     AppComponent,
     HomeComponent,
     BookSearchMainComponent,
-    MovieSearchMainComponent
+    MovieSearchMainComponent,
+    SearchBoxComponent
   ],
   imports: [
     BrowserModule,

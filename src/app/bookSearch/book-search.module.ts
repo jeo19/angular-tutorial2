@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
+import { COMPOSITION_BUFFER_MODE } from '@angular/forms';
 
 
 @NgModule({
@@ -19,6 +20,12 @@ import { FormsModule } from '@angular/forms';
     SearchBoxComponent,
     ListBoxComponent,
     DetailBoxComponent  
+  ],
+  providers:[
+    {
+      provide:COMPOSITION_BUFFER_MODE,
+      useValue:false
+    }
   ],
   imports: [
     CommonModule,

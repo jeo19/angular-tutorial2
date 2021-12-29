@@ -16,5 +16,8 @@ export class SearchBoxComponent implements OnInit {
   setKeyword(keyword:string):void{
     this.keyword=keyword;
   }
+  inputChange():void{
+    
+  }
 
 }

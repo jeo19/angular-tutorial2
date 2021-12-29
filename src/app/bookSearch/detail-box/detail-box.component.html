@@ -1,16 +1,16 @@
 <mat-card class="example-card">
     <mat-card-header class="detail-header-style">
       <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Title : Complete an Angular in one week </mat-card-title>
-      <mat-card-subtitle>Author : martin cool</mat-card-subtitle>
+      <mat-card-title>Title :{{book.btitle}} </mat-card-title>
+      <mat-card-subtitle>Author : {{book.bauthor}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image class="book-image" src="">
+    <img mat-card-image class="book-image" src="{{book.bimgurl}}">
     <mat-card-content>
       <p>
-        ISBN : 123-456, cost : 5000, pulish date : 2017/12
+        ISBN : {{book.bisbn}}, cost : {{book.bprice }}, pulish date :  {{book.bdate}}
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button mat-raised-button color="primary">Add cart</button>
+      <button mat-button mat-raised-button color="primary" [disabled]='book.bprice > 20000'>Add cart</button>
     </mat-card-actions>
   </mat-card>
